@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Almeida &amp; Vasconcelos Advocacia | São Paulo – SP (site demonstrativo)</title>
+<meta name="description" content="Almeida &amp; Vasconcelos Advocacia: escritório fictício em São Paulo, com atuação em Direito Civil, Trabalhista, Empresarial, Família, Consumidor, Imobiliário, Previdenciário e Tributário. Conteúdo demonstrativo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F3A;--navy2:#13305A;--gold:#B8975A;--gold2:#8A6D35;--bg:#F4F5F7;--card:#fff;--ink:#1B2433;--mute:#5B6678;--line:#E1E4EA;--onnavy:#E8ECF3;--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1626;--card:#101F36;--ink:#E8ECF3;--mute:#A3AEC0;--line:#223552;--gold2:#D3B27A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A1626;--card:#101F36;--ink:#E8ECF3;--mute:#A3AEC0;--line:#223552;--gold2:#D3B27A;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;height:auto}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:60}
+h1,h2,h3{font-family:var(--serif);line-height:1.12;font-weight:600}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1160px;margin:auto;padding:0 22px}
+section{padding:96px 0}
+.sec-h{max-width:640px;margin-bottom:48px}
+.sec-h h2{font-size:clamp(2rem,4.4vw,3rem);margin-bottom:14px}
+.sec-h p{color:var(--mute)}
+.rule{width:56px;height:2px;background:var(--gold);margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border:1px solid var(--gold);background:var(--gold);color:#0B1F3A;font:600 .95rem var(--sans);text-decoration:none;cursor:pointer;border-radius:2px;transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px);background:#C9A96D}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.dark:hover{background:var(--navy2)}
+svg.i{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+/* demo bar + header */
+.demo{background:#071528;color:#C9D2E0;font-size:.8rem;text-align:center;padding:8px 14px;position:relative;z-index:50}
+header{position:sticky;top:0;z-index:55;background:var(--navy);border-bottom:1px solid rgba(184,151,90,.35);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo b{font:600 1.3rem var(--serif);letter-spacing:.02em;display:block;line-height:1.1}
+.logo small{display:block;font-size:.68rem;color:var(--gold);letter-spacing:.14em;text-transform:uppercase}
+nav ul{display:flex;gap:30px;list-style:none;padding:0}
+nav a{color:var(--onnavy);text-decoration:none;font-size:.92rem;font-weight:500;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .25s,color .25s}
+nav a:hover,nav a.on{color:#fff;border-color:var(--gold)}
+.burger{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;width:44px;height:44px;border-radius:2px;cursor:pointer;align-items:center;justify-content:center}
+@media(max-width:900px){.burger{display:inline-flex}
+nav{position:absolute;left:0;right:0;top:100%;background:var(--navy);max-height:0;overflow:hidden;transition:max-height .35s;border-bottom:1px solid rgba(184,151,90,.35)}
+nav.open{max-height:420px}nav ul{flex-direction:column;gap:0;padding:8px 22px 18px}nav li a{display:block;padding:13px 0}}
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 20%,#1B427A 0%,transparent 60%),var(--navy);color:#fff;padding:84px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(2.5rem,6vw,4.4rem);margin-bottom:22px;font-weight:600}
+.hero p.lead{color:var(--onnavy);font-size:1.1rem;max-width:520px;margin-bottom:34px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:64px}
+.hero-art{align-self:end;justify-self:end;width:100%;max-width:470px}
+.hero-art svg{display:block;width:100%;height:auto}
+.hero .in{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .in:nth-child(2){animation-delay:.12s}.hero .in:nth-child(3){animation-delay:.24s}.hero-art{animation:rise 1.1s .2s both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(max-width:860px){.hero{padding-top:56px}.hero .wrap{grid-template-columns:1fr}.hero-art{max-width:340px;justify-self:center}.cta{margin-bottom:40px}}
+/* stats */
+.stats{background:var(--navy2);color:#fff;border-top:1px solid rgba(184,151,90,.4)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:30px;padding-bottom:30px}
+.stats b{font:600 2.3rem var(--serif);color:var(--gold);display:block;line-height:1}
+.stats span{font-size:.85rem;color:var(--onnavy)}
+@media(max-width:700px){.stats .wrap{grid-template-columns:1fr 1fr}}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about p+p{margin-top:14px}.about p{color:var(--mute)}
+.mvv{display:grid;gap:14px}
+.mvv div{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);padding:20px 22px;border-radius:2px}
+.mvv h3{font-size:1.4rem;margin-bottom:4px}.mvv p{font-size:.95rem}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:32px}}
+/* cards */
+.grid{display:grid;gap:22px}
+.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:1020px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.g4,.g3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:28px 24px;box-shadow:0 1px 2px rgba(11,31,58,.05);transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(11,31,58,.12);border-color:var(--gold)}
+.ico{width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold2);margin-bottom:18px;border-radius:50%}
+.card h3{font-size:1.45rem;margin-bottom:8px}.card p{color:var(--mute);font-size:.94rem;flex:1}
+.more{margin-top:16px;color:var(--gold2);font-weight:600;font-size:.9rem;text-decoration:none;display:inline-flex;gap:6px;align-items:center;background:none;border:0;cursor:pointer;font-family:var(--sans);padding:0}
+.more:hover{text-decoration:underline}
+.alt{background:var(--card);border-block:1px solid var(--line)}
+.alt .card{background:var(--bg)}
+/* team */
+.person{padding:0;overflow:hidden}
+.person .ph{aspect-ratio:4/3.2;display:block;width:100%}
+.person .tx{padding:22px 24px 26px}
+.person em{font-style:normal;color:var(--gold2);font-size:.88rem;font-weight:600;display:block;margin:2px 0 10px}
+/* testimonials */
+.quote{font-family:var(--serif);font-size:1.2rem;line-height:1.5;margin-bottom:18px;flex:1}
+.who{font-size:.85rem;color:var(--mute)}
+.tag{display:inline-block;font-size:.72rem;color:var(--gold2);border:1px dashed var(--gold);padding:2px 8px;margin-bottom:14px;align-self:flex-start;border-radius:2px}
+/* articles */
+.art{padding:0;overflow:hidden}.art svg{display:block;width:100%;height:170px}
+.art .tx{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.meta{font-size:.8rem;color:var(--mute);margin-bottom:8px}.meta b{color:var(--gold2)}
+.center{text-align:center;margin-top:40px}
+/* contact */
+.contact{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px}
+@media(max-width:900px){.contact{grid-template-columns:1fr}}
+form{background:var(--card);border:1px solid var(--line);padding:30px;border-radius:3px;display:grid;gap:16px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:560px){.f2{grid-template-columns:1fr}}
+label{font-size:.85rem;font-weight:600;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:12px 14px;border-radius:2px;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(184,151,90,.25)}
+textarea{min-height:120px;resize:vertical}
+.err{color:#B3261E;font-size:.8rem;min-height:1em;display:block;margin-top:3px}
+@media(prefers-color-scheme:dark){.err{color:#FF8A80}}
+.ok{display:none;padding:14px;border:1px solid var(--gold);background:rgba(184,151,90,.12);border-radius:2px;font-size:.92rem}
+.info{display:grid;gap:18px;margin-bottom:26px}
+.info div{display:flex;gap:14px;align-items:flex-start;color:var(--mute)}.info b{color:var(--ink);display:block}
+.info .i{color:var(--gold2);margin-top:3px}
+.map{border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--card)}.map svg{display:block;width:100%;height:auto}
+.wa{display:inline-flex;margin-bottom:22px;background:#1FA855;border-color:#1FA855;color:#fff}.wa:hover{background:#188F48}
+/* footer */
+footer{background:var(--navy);color:var(--onnavy);padding:64px 0 28px;font-size:.92rem}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;margin-bottom:40px}
+@media(max-width:900px){.fg{grid-template-columns:1fr 1fr}}@media(max-width:560px){.fg{grid-template-columns:1fr}}
+footer h4{font:600 1.2rem var(--serif);color:#fff;margin-bottom:14px}
+footer ul{list-style:none;padding:0;display:grid;gap:8px}footer a{text-decoration:none;color:#C4CDDB}footer a:hover{color:var(--gold)}
+.soc{display:flex;gap:10px;margin-top:16px}.soc a{width:40px;height:40px;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;border-radius:50%}
+.legal{border-top:1px solid rgba(255,255,255,.15);padding-top:22px;font-size:.8rem;color:#9FAABD;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;width:58px;height:58px;border-radius:50%;background:#1FA855;color:#fff;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.3);transition:transform .25s}
+.float:hover{transform:scale(1.08)}.float svg{width:28px;height:28px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--navy);color:#fff;border:1px solid var(--gold);padding:12px 20px;border-radius:2px;opacity:0;pointer-events:none;transition:.3s;z-index:80;max-width:90vw;font-size:.9rem}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.rv.v{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<!-- AVISO: todo o conteúdo deste site (nomes, telefones, endereços, números, depoimentos e artigos) é FICTÍCIO e demonstrativo. -->
+<div class="demo" role="note">Site demonstrativo: todos os nomes, dados, números e depoimentos são fictícios.</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#inicio" aria-label="Almeida &amp; Vasconcelos Advocacia, início">
+<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" fill="none" stroke="#B8975A"/><text x="20" y="27" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="20" font-weight="700" fill="#B8975A">A&amp;V</text></svg>
+<span><b>Almeida &amp; Vasconcelos</b><small>Advocacia</small></span></a>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav id="menu" aria-label="Principal"><ul>
+<li><a href="#inicio">Início</a></li><li><a href="#escritorio">O Escritório</a></li><li><a href="#areas">Áreas de Atuação</a></li><li><a href="#equipe">Nossa Equipe</a></li><li><a href="#artigos">Artigos</a></li><li><a href="#contato">Contato</a></li></ul></nav>
+</div>
+</header>
+<main>
+<section class="hero" id="inicio" style="padding-bottom:0">
+<div class="wrap">
+<div>
+<h1 class="in">Cada direito merece uma defesa atenta e responsável.</h1>
+<p class="lead in">Atuamos com ética, técnica e clareza, analisando cada caso de forma individual para orientar você com segurança em todas as etapas.</p>
+<div class="cta in"><a class="btn" href="#contato">Agende uma Consulta</a><a class="btn ghost" href="#escritorio">Conheça o Escritório</a></div>
+</div>
+<div class="hero-art" aria-hidden="false">
+<svg viewBox="0 0 470 430" role="img" aria-label="Ilustração de fachada clássica com colunas e balança da justiça">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27508C"/><stop offset="1" stop-color="#0E2747"/></linearGradient></defs>
+<circle cx="235" cy="170" r="150" fill="none" stroke="#B8975A" stroke-opacity=".35"/><circle cx="235" cy="170" r="118" fill="none" stroke="#B8975A" stroke-opacity=".2"/>
+<g fill="url(#g1)" stroke="#B8975A" stroke-width="1.2"><path d="M40 150 235 40 430 150Z"/><rect x="40" y="150" width="390" height="18"/>
+<rect x="70" y="190" width="36" height="190"/><rect x="146" y="190" width="36" height="190"/><rect x="288" y="190" width="36" height="190"/><rect x="364" y="190" width="36" height="190"/>
+<rect x="40" y="380" width="390" height="22"/><rect x="20" y="402" width="430" height="28"/></g>
+<g stroke="#B8975A" stroke-width="1.8" fill="none" stroke-linecap="round"><path d="M235 190v120M205 310h60M235 205h-62M235 205h62M173 205l-22 55h44zM297 205l-22 55h44z"/><circle cx="235" cy="196" r="6" fill="#B8975A"/></g>
+<path d="M235 82v36M221 100h28" stroke="#B8975A" stroke-width="2"/>
+</svg></div>
+</div>
+</section>
+<div class="stats"><div class="wrap">
+<div><b>18</b><span>anos de atuação (dado fictício)</span></div><div><b>8</b><span>áreas de atuação</span></div><div><b>12</b><span>profissionais na equipe (fictício)</span></div><div><b>3</b><span>sócios fundadores e atuais</span></div></div></div>
+
+<section id="escritorio"><div class="wrap about">
+<div class="rv"><div class="rule"></div><h2 style="font-size:clamp(2rem,4.4vw,3rem);margin-bottom:18px">Um escritório construído sobre confiança e escuta.</h2>
+<p>Fundado em 2008 por Helena Almeida e Rodrigo Vasconcelos, ex-colegas de faculdade no Largo São Francisco, o escritório nasceu de uma ideia simples: o cliente deve entender o que está acontecendo com o seu caso, em linguagem clara, do primeiro atendimento ao último.</p>
+<p>Hoje, instalados na Avenida Paulista, reunimos uma equipe multidisciplinar que atua de forma consultiva e contenciosa, sempre dentro do Código de Ética e Disciplina da OAB. Não prometemos resultados: prometemos dedicação, técnica e transparência.</p>
+<p style="font-size:.8rem;margin-top:18px">História fictícia, criada para fins demonstrativos.</p></div>
+<div class="mvv rv">
+<div><h3>Missão</h3><p>Orientar pessoas e empresas com rigor técnico, respeito e total clareza sobre riscos e caminhos possíveis.</p></div>
+<div><h3>Visão</h3><p>Ser reconhecido pela qualidade do atendimento e pela seriedade com que conduz cada demanda.</p></div>
+<div><h3>Valores</h3><p>Ética, sigilo profissional, responsabilidade, independência técnica e comunicação transparente.</p></div>
+</div></div></section>
+
+<section class="alt" id="diferenciais"><div class="wrap">
+<div class="sec-h rv"><div class="rule"></div><h2>Como atendemos</h2><p>Princípios que orientam a relação com cada cliente.</p></div>
+<div class="grid g3" id="difs"></div></div></section>
+
+<section id="areas"><div class="wrap">
+<div class="sec-h rv"><div class="rule"></div><h2>Áreas de atuação</h2><p>Oito frentes de atuação, com análise individual de cada situação.</p></div>
+<div class="grid g4" id="areasGrid"></div></div></section>
+
+<section class="alt" id="equipe"><div class="wrap">
+<div class="sec-h rv"><div class="rule"></div><h2>Nossa equipe</h2><p>Perfis fictícios e ilustrações demonstrativas; não correspondem a pessoas reais.</p></div>
+<div class="grid g3" id="team"></div></div></section>
+
+<section id="depoimentos"><div class="wrap">
+<div class="sec-h rv"><div class="rule"></div><h2>Depoimentos</h2><p>Exemplos demonstrativos de como esta seção funcionaria. Não são avaliações reais.</p></div>
+<!-- CONTEÚDO DEMONSTRATIVO: os depoimentos abaixo são fictícios. Na prática, depoimentos de clientes são vedados pela publicidade da advocacia (OAB); seção mantida apenas como modelo visual. -->
+<div class="grid g3" id="tests"></div></div></section>
+
+<section class="alt" id="artigos"><div class="wrap">
+<div class="sec-h rv"><div class="rule"></div><h2>Artigos jurídicos</h2><p>Conteúdo informativo e de caráter geral, sem finalidade de captação de clientela.</p></div>
+<div class="grid g3" id="arts"></div>
+<div class="center"><button class="btn dark" data-demo="Em um site real, este botão levaria à listagem completa de artigos.">Ver todos os artigos</button></div></div></section>
+
+<section id="contato"><div class="wrap contact">
+<div class="rv"><div class="rule"></div><h2 style="font-size:clamp(2rem,4.4vw,3rem);margin-bottom:14px">Fale com o escritório</h2>
+<p style="color:var(--mute);margin-bottom:26px">Conte brevemente sua situação. Respondemos em dias úteis e o primeiro contato não gera obrigação de contratação.</p>
+<div class="info">
+<div><svg class="i" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span><b>Endereço fictício</b>Av. Exemplo, 1000, 12º andar, Bela Vista, São Paulo – SP, 01000-000</span></div>
+<div><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span><b>Telefone fictício</b>(11) 5550-0123</span></div>
+<div><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><b>E-mail fictício</b>contato@almeidavasconcelos.example</span></div>
+<div><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Horário de atendimento</b>Segunda a sexta, das 9h às 18h, com hora marcada</span></div></div>
+<a class="btn wa" href="https://wa.me/5511955500123?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20(demonstra%C3%A7%C3%A3o)" target="_blank" rel="noopener" data-wa>WhatsApp (11) 95550-0123</a>
+<div class="map"><svg viewBox="0 0 520 250" role="img" aria-label="Mapa ilustrativo com localização fictícia do escritório">
+<rect width="520" height="250" fill="#E8ECF3"/><g stroke="#fff" stroke-width="10"><path d="M0 70h520M0 170h520M120 0v250M330 0v250"/></g><path d="M0 120 520 40" stroke="#fff" stroke-width="16"/>
+<rect x="150" y="90" width="150" height="60" fill="#D3DAE6"/><rect x="360" y="90" width="120" height="60" fill="#CFE0D2"/>
+<g transform="translate(250 100)"><path d="M0 40S-22 18-22 0a22 22 0 0 1 44 0C22 18 0 40 0 40z" fill="#0B1F3A" stroke="#B8975A" stroke-width="2"/><circle r="8" cy="0" fill="#B8975A"/></g>
+<text x="14" y="236" font-size="12" fill="#5B6678" font-family="Manrope,Arial,sans-serif">Mapa ilustrativo. Localização fictícia.</text></svg></div>
+</div>
+<form id="form" class="rv" novalidate aria-label="Formulário de contato (demonstrativo)">
+<div class="f2"><div><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required><span class="err" data-for="nome"></span></div>
+<div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err" data-for="email"></span></div></div>
+<div class="f2"><div><label for="tel">Telefone</label><input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required><span class="err" data-for="tel"></span></div>
+<div><label for="assunto">Assunto</label><select id="assunto" name="assunto" required><option value="">Selecione</option><option>Direito Civil</option><option>Direito Trabalhista</option><option>Direito Empresarial</option><option>Família e Sucessões</option><option>Direito do Consumidor</option><option>Direito Imobiliário</option><option>Direito Previdenciário</option><option>Direito Tributário</option><option>Outro assunto</option></select><span class="err" data-for="assunto"></span></div></div>
+<div><label for="msg">Mensagem</label><textarea id="msg" name="msg" required minlength="15"></textarea><span class="err" data-for="msg"></span></div>
+<p style="font-size:.8rem;color:var(--mute)">Não envie documentos nem informações sigilosas por este formulário. Demonstração: nenhum dado é enviado ou armazenado.</p>
+<button class="btn dark" type="submit">Enviar mensagem</button>
+<div class="ok" id="ok" role="status"></div>
+</form></div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><h4>Almeida &amp; Vasconcelos Advocacia</h4><p>“Excelência jurídica, compromisso com seus direitos.” Escritório fictício em São Paulo – SP, criado para demonstração.</p>
+<div class="soc"><a href="#" data-demo="Perfil fictício do LinkedIn (demonstração)." aria-label="LinkedIn (demonstrativo)"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2.5 2.5 0 0 1 5 0v3"/></svg></a>
+<a href="#" data-demo="Perfil fictício do Instagram (demonstração)." aria-label="Instagram (demonstrativo)"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg></a></div></div>
+<div><h4>Links rápidos</h4><ul><li><a href="#inicio">Início</a></li><li><a href="#escritorio">O Escritório</a></li><li><a href="#equipe">Nossa Equipe</a></li><li><a href="#artigos">Artigos</a></li><li><a href="#contato">Contato</a></li></ul></div>
+<div><h4>Áreas</h4><ul id="fAreas"></ul></div>
+<div><h4>Contato</h4><ul><li>Av. Exemplo, 1000, São Paulo – SP</li><li>(11) 5550-0123</li><li>contato@almeidavasconcelos.example</li><li>Seg. a sex., 9h às 18h</li></ul></div>
+</div>
+<div class="legal"><span>© 2026 Almeida &amp; Vasconcelos Advocacia (fictício). Todos os direitos reservados.</span><a href="#" data-demo="A Política de Privacidade completa seria exibida aqui em um site real.">Política de Privacidade</a></div>
+<p style="font-size:.75rem;color:#8995AA;margin-top:12px">Este site é uma demonstração e não constitui publicidade ou oferta de serviços advocatícios. Nenhuma informação aqui representa pessoas ou escritórios reais.</p>
+</div></footer>
+
+<a class="float" id="fw" href="https://wa.me/5511955500123" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp (número demonstrativo)" data-wa><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)};
+var ic={
+civil:'<path d="M12 3v18M5 7h14M5 7l-3 7a3.5 3.5 0 0 0 6 0zM19 7l-3 7a3.5 3.5 0 0 0 6 0z"/>',
+trab:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
+emp:'<path d="M4 21V5l8-2v18M12 9h8v12M7 8v.01M7 12v.01M7 16v.01M16 13v.01M16 17v.01"/>',
+fam:'<circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M15 15a4.5 4.5 0 0 1 6 4"/>',
+cons:'<path d="M5 6h15l-1.5 9h-12zM5 6 4 3H2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/>',
+imo:'<path d="M3 11 12 3l9 8M5 9.5V21h14V9.5M10 21v-6h4v6"/>',
+prev:'<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>',
+trib:'<path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/>',
+user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+map:'<path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/>',
+heart:'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>',
+chat:'<path d="M21 12a8 8 0 0 1-12 7l-5 1.5L5 16a8 8 0 1 1 16-4z"/>'};
+function svg(k){return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">'+ic[k]+'</svg>'}
+var difs=[["user","Atendimento personalizado","Cada pessoa é ouvida com atenção, e a conversa começa pelo seu contexto, não por modelos prontos."],["eye","Transparência e ética profissional","Informamos riscos, custos e limites de cada caminho, sempre dentro das normas da OAB."],["map","Estratégias jurídicas individualizadas","A análise parte dos fatos e documentos do seu caso, sem fórmulas aplicadas em série."],["heart","Compromisso com cada cliente","Acompanhamento próximo e responsável, do primeiro atendimento até o encerramento da demanda."],["chat","Comunicação clara e objetiva","Explicamos termos técnicos em linguagem simples e mantemos você informado sobre cada etapa."]];
+$('#difs').innerHTML=difs.map(function(d){return '<article class="card rv"><div class="ico">'+svg(d[0])+'</div><h3>'+d[1]+'</h3><p>'+d[2]+'</p></article>'}).join('');
+var areas=[["civil","Direito Civil","Contratos, responsabilidade civil, obrigações e demais relações entre particulares."],["trab","Direito Trabalhista","Orientação a empregados e empregadores sobre relações de trabalho e seus desdobramentos."],["emp","Direito Empresarial","Consultoria societária e contratual para empresas em diferentes fases de sua trajetória."],["fam","Direito de Família e Sucessões","Divórcio, guarda, alimentos, inventários e planejamento sucessório, com sensibilidade."],["cons","Direito do Consumidor","Análise de relações de consumo, contratos, cobranças e vícios de produtos e serviços."],["imo","Direito Imobiliário","Compra, venda, locação, regularização e conflitos envolvendo imóveis."],["prev","Direito Previdenciário","Orientação sobre benefícios, aposentadorias e procedimentos junto ao INSS."],["trib","Direito Tributário","Consultoria e contencioso em matéria tributária para pessoas físicas e jurídicas."]];
+$('#areasGrid').innerHTML=areas.map(function(a){return '<article class="card rv"><div class="ico">'+svg(a[0])+'</div><h3>'+a[1]+'</h3><p>'+a[2]+'</p><a class="more" href="#contato" data-area="'+a[1]+'">Conheça os serviços <svg class="i" style="width:16px;height:16px" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>'}).join('');
+$('#fAreas').innerHTML=areas.map(function(a){return '<li><a href="#areas">'+a[1]+'</a></li>'}).join('');
+var team=[["Helena Almeida","Direito Civil e Família","Sócia-fundadora. Atua há mais de duas décadas em contratos e sucessões, com foco em soluções consensuais. (Perfil fictício.)","#13305A","#B8975A","HA"],["Rodrigo Vasconcelos","Empresarial e Tributário","Sócio-fundador. Assessora empresas em questões societárias, contratos e planejamento tributário. (Perfil fictício.)","#0B1F3A","#C9A96D","RV"],["Marina Tavares Duarte","Trabalhista e Previdenciário","Sócia. Dedica-se às relações de trabalho e à orientação previdenciária, com atendimento acolhedor. (Perfil fictício.)","#1B427A","#B8975A","MT"]];
+$('#team').innerHTML=team.map(function(t){return '<article class="card person rv"><svg class="ph" viewBox="0 0 400 320" role="img" aria-label="Ilustração demonstrativa: retrato de '+t[0]+' (pessoa fictícia)"><rect width="400" height="320" fill="'+t[3]+'"/><circle cx="200" cy="130" r="52" fill="none" stroke="'+t[4]+'" stroke-width="2"/><path d="M96 320a104 104 0 0 1 208 0z" fill="none" stroke="'+t[4]+'" stroke-width="2"/><text x="200" y="146" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="44" font-weight="600" fill="'+t[4]+'">'+t[5]+'</text></svg><div class="tx"><h3>'+t[0]+'</h3><em>'+t[1]+'</em><p>'+t[2]+'</p></div></article>'}).join('');
+var tests=[["Ficamos satisfeitos com a clareza das explicações recebidas ao longo de todo o atendimento.","Cliente fictício A., empresária"],["Entendi cada etapa do processo sem precisar de dicionário jurídico. Atendimento cordial.","Cliente fictício C. M., engenheiro"],["Fomos ouvidos com atenção e orientados com seriedade em um momento delicado.","Cliente fictícia L. T., professora"]];
+$('#tests').innerHTML=tests.map(function(t){return '<article class="card rv"><span class="tag">Depoimento demonstrativo</span><p class="quote">“'+t[0]+'”</p><span class="who">'+t[1]+'</span></article>'}).join('');
+var arts=[["Direito do Consumidor","12 de outubro de 2026","Cobranças indevidas: o que observar na fatura","Orientações gerais para conferir cobranças, guardar comprovantes e registrar reclamações por canais oficiais.","#13305A"],["Relações Trabalhistas","28 de setembro de 2026","Banco de horas: pontos de atenção para empresas e empregados","Visão geral das regras sobre compensação de jornada e a importância do registro correto.","#0B1F3A"],["Planejamento Sucessório","9 de setembro de 2026","Testamento e holding familiar: quando conversar sobre sucessão","Panorama introdutório sobre instrumentos de planejamento e a importância da análise individual.","#1B427A"]];
+$('#arts').innerHTML=arts.map(function(a,i){return '<article class="card art rv"><svg viewBox="0 0 400 170" role="img" aria-label="Ilustração abstrata para o artigo: '+a[2]+'"><rect width="400" height="170" fill="'+a[4]+'"/><g fill="none" stroke="#B8975A" stroke-opacity=".6">'+(i==0?'<circle cx="200" cy="85" r="50"/><circle cx="200" cy="85" r="30"/><path d="M60 85h80M260 85h80"/>':i==1?'<rect x="130" y="35" width="140" height="100"/><path d="M130 70h140M200 35v100"/>':'<path d="M40 140 120 70l70 40 80-70 90 60"/><circle cx="120" cy="70" r="6"/><circle cx="270" cy="40" r="6"/>')+'</g></svg><div class="tx"><div class="meta"><b>'+a[0]+'</b> · '+a[1]+'</div><h3>'+a[2]+'</h3><p style="color:var(--mute);font-size:.94rem;flex:1">'+a[3]+'</p><button class="more" data-demo="Em um site real, o artigo completo seria aberto aqui.">Ler artigo</button></div></article>'}).join('');
+/* toast */
+var tt,toast=$('#toast');function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},3600)}
+document.addEventListener('click',function(e){var d=e.target.closest('[data-demo]');if(d){e.preventDefault();say(d.getAttribute('data-demo'))}var w=e.target.closest('[data-wa]');if(w){say('Link de WhatsApp demonstrativo: número fictício.')}var a=e.target.closest('[data-area]');if(a){$('#assunto').value=a.getAttribute('data-area')}});
+/* menu */
+var b=$('#burger'),m=$('#menu');function cl(){m.classList.remove('open');b.setAttribute('aria-expanded','false')}
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A')cl()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cl()});
+/* active link + reveal */
+var links=[].slice.call(document.querySelectorAll('nav a'));
+try{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var so=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});['inicio','escritorio','areas','equipe','artigos','contato'].forEach(function(id){so.observe(document.getElementById(id))})}catch(e){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('v')})}
+/* form */
+var f=$('#form');
+function chk(el){var v=el.value.trim(),m='';
+if(!v)m='Preencha este campo.';
+else if(el.id==='nome'&&v.length<3)m='Informe seu nome completo.';
+else if(el.id==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v))m='Informe um e-mail válido, como nome@exemplo.com.';
+else if(el.id==='tel'&&!/^\(?\d{2}\)?\s?9?\d{4}-?\d{4}$/.test(v))m='Informe o telefone com DDD, como (11) 90000-0000.';
+else if(el.id==='msg'&&v.length<15)m='Escreva ao menos 15 caracteres.';
+var s=f.querySelector('[data-for="'+el.id+'"]');s.textContent=m;el.setAttribute('aria-invalid',m?'true':'false');return !m}
+[].forEach.call(f.querySelectorAll('input,select,textarea'),function(el){el.addEventListener('blur',function(){chk(el)});el.addEventListener('input',function(){if(el.getAttribute('aria-invalid')==='true')chk(el)})});
+f.addEventListener('submit',function(e){e.preventDefault();var bad=null;[].forEach.call(f.querySelectorAll('input,select,textarea'),function(el){if(!chk(el)&&!bad)bad=el});var ok=$('#ok');
+if(bad){bad.focus();ok.style.display='none';return}
+ok.style.display='block';ok.textContent='Mensagem validada com sucesso (modo demonstrativo). Nenhum dado foi enviado ou armazenado.';f.reset();say('Mensagem enviada (demonstração).')});
+})();
+</script>
+</body>
+</html>
